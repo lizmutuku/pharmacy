@@ -1,0 +1,249 @@
+
+#mainNav{
+  background-color: #midnightblue!important;
+}
+#panel-image{
+  height: 45px;
+  width: 45px;
+}
+
+body{
+  
+  background-color: deepskyblue;
+
+
+}
+#register {
+      padding: 20px;
+      color: white;
+      font-size: 120%;
+      background-color: white;
+      display: inline-block;
+      text-decoration: none;
+      border: none;
+      margin-top: 30%;
+      width: 30%;
+
+    }
+    fieldset{
+    margin-left: 30%;
+    margin-right: 30%;
+    border:hidden;
+
+  }
+   input[type=text], [type=password]{
+    width: 100%;
+
+  }
+  .row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 30.00%;
+  padding: 0px;
+  text-align: center;
+}
+  form{
+  margin-top: 10%;
+  background-color: peachpuff;
+  padding: 20px;
+  border-radius: 20px;
+}
+ .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+  #Submit{
+    padding: 7px;
+      color: white;
+      font-size: 130%;
+      background-color: orange;
+      display: inline-block;
+      text-decoration: none;
+      border: none;
+      width: 30%;
+
+  }
+  li a{
+      text-decoration: none;
+      padding: 14px 16px;
+      color: white;
+     
+
+    }
+    a{
+      text-decoration: none;
+      float: left;
+    }
+
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 20px0px;
+      overflow: hidden;
+     
+      
+
+    }
+    li a.active{
+      background-color: springgreen;
+       color: black;
+    }
+    li{
+      float: left;
+    }
+    .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+.card{
+  background-color: #mintcream!important;
+  color: black;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 30%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#user_type {
+  height: 40px;
+  width: 98%;
+  padding: 5px 10px;
+  background: white;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px darkcyan;
+}
+.btn {
+  background-color: #4CAF50;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+.profile_info img {
+  display: inline-block; 
+  width: 50px; 
+  height: 50px; 
+  margin: 5px;
+  float: left;
+}
+.profile_info div {
+  display: inline-block; 
+  margin: 5px;
+}
+.profile_info: after{
+   content: "";
+  display: block;
+  clear: both;
+}
+ 
+
+
+
+
+

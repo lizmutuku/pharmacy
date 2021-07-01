@@ -1,5 +1,5 @@
  <?php 
- require_once"config.php";
+require_once"config.php";
 
 $username=$email=$password=$confirm_password=$gender=$address=$telephone="";
 $username_error=$email_error=$password_error=$confirm_password_error=$gender_error=$address_error=$telephone_error="";
@@ -82,7 +82,7 @@ if (empty($username_error) && empty($email_error) && empty($password_error) && e
 }
 
  ?>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -95,33 +95,31 @@ if (empty($username_error) && empty($email_error) && empty($password_error) && e
 <body>
 	<div class="container">
 	<div class="col-md-6 offset-3">
-
 <form action="" method="post">
-
 	<h3 class="text-center">Register</h3>
-
+	
   <div class="form-group">
+  	<div class="col-md-12 offset-3"></div>
     <label for="username">Username</label>
-    <input type="text" class="form-control" id="username" name="username">
+    <input type="text" class="form-control" id="username" name="username" required>
     <span class="text-danger"><?php echo $username_error; ?></span>
   </div>
-
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+  <div class="row">
+ 
+  	<div class="form-group"></div>
+     <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
      <span class="text-danger"><?php echo $email_error; ?></span>
   </div>
-
   <div class="form-group ">
     <label for="password">Password</label>
     <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
     <span class="text-danger"><?php echo $password_error; ?></span>
   </div>
-
   <div class="form-group ">
     <label for="confirm_password">Confirm_password</label>
     <input type="password" class="form-control" id="confirm_password" placeholder="Re-enter password"name="confirm_password">
-    <span class="text-danger"><?php echo $confirm_password_error; ?></span>
+      <span class="text-danger"><?php echo $confirm_password_error; ?></span>
   </div>
    <div class="form-group">
             <label for="gender">Gender:</label>
@@ -130,28 +128,22 @@ if (empty($username_error) && empty($email_error) && empty($password_error) && e
               <span class="help-block"> <?php echo $gender_error;?>         
              </span>           
             </div>
- 
   <div class="form-group ">
-    <label for="telephone">telephone</label>
-    <input type="number" class="form-control" id="telephone" placeholder="Enter your telephone " name="telephone">
-    <span class="text-danger"><?php echo $telephone_error; ?></span>
-  </div>
-
-  <div class="form-group ">
-    <label for="address">address</label>
-    <input type="varchar" class="form-control" id="address" placeholder="Enter your address" name="address">
+    <label for="address">Address</label>
+    <input type="address" class="form-control" id="address" placeholder="Enter address" name="address" required>
     <span class="text-danger"><?php echo $address_error; ?></span>
   </div>
- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
- <div class="form-group">
- 					<input type="submit" class="btn btn-primary" value="Register">
- 				</div>
- 
-  			
-  <a href="login.php" class="text-center"> Already have an account</a>
-
+  <div class="form-group ">
+    <label for="telephone">Telephone</label>
+    <input type="telephone" class="form-control" id="telephone" placeholder="Enter telephone" name="telephone" required>
+    <span class="text-danger"><?php echo $telephone_error; ?></span>
+  </div>
+   <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+  <button type="submit" class="btn btn-primary">Register</button>
+  <div>
+  <a href="login.php"> Already have an account</a>
+</div>
 </form>
-
 </div>
 </div>
 </body>
