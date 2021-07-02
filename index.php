@@ -46,41 +46,38 @@ function myFunction() {
   <!-- Full-width images with number text -->
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
-      <img src="slideshow/7.jpg" style="width:1300px;height:500px">
+      <img src="slideshow/7.jpg" style="width:1300px;height:400px">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 6</div>
-      <img src="slideshow/2.jpg" style="width:1300px;height:500px">
+      <img src="slideshow/2.jpg" style="width:1300px;height:400px">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 6</div>
-      <img src="slideshow/3.jpg" style="width:1300px;height:500px">
+      <img src="slideshow/3.jpg" style="width:1300px;height:400px">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">4 / 6</div>
-      <img src="slideshow/4.jpeg" style="width:1300px;height:500px">
+      <img src="slideshow/4.jpeg" style="width:1300px;height:400px">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">5 / 6</div>
-      <img src="slideshow/5.jpg" style="width:1300px;height:500px">
+      <img src="slideshow/5.jpg" style="width:1300px;height:400px">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">6 / 6</div>
-      <img src="slideshow/6.jpg" style="width:1300px;height:500px">
+      <img src="slideshow/6.jpg" style="width:1300px;height:400px">
   </div>
 </div>
 
     
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
-
- 
-
     
 <script>
 var myIndex = 0;
