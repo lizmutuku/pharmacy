@@ -1,8 +1,20 @@
  <link rel="stylesheet" href="css/index2.css">	
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
-  <a href="products.php">PRODUCTS</a>
+   <div class="dropdown">
+    <button class="dropbtn">PRODUCTS 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="antibiotics.php">ANTIBIOTICS</a>
+      <a href="painrelief.php">PAIN RELIEF</a>
+      <a href="respiratory.php">RESPIRATORY</a>
+      <a href="ent.php">EAR NOSE THROAT</a>
+      <a href="digestive.php">DIGESTIVE RELIEF</a>
+    </div>
+  </div> 
    <a href="prescription.php">PRESCRIPTION</a>
+   
   <div class="topnav-right">
     <a href="login.php">LOGIN</a>
     <a href="register.php">REGISTER</a>
@@ -30,9 +42,11 @@ function myFunction() {
   <title>MY PHARMACY</title>
    <meta charset="UTF-8">
     <meta name="description" content="My Pharmacy">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 

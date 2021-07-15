@@ -9,51 +9,13 @@ require_once 'config.php';
 		<title>Submit a Prescription</title> 	
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<meta name="robots" content="index,follow" />
-	<meta name="generator" content="Webtrade Siternity Content Management System" />
-	<meta name="author" content="Webtrade Ltd. - http://www.webtrade.ie" />
-	<meta name="Revisit-After" content="7 days" />
-	<link rel="canonical" href="https://online pharmacy.com/submit-a-prescription" />
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <meta property="og:url" content="https://online pharmacy.com/submit-a-prescription" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Submit a Prescription" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="https://online pharmacy.com/images/pageElements/logoOG.png" />
-    <meta name="theme-color" content="#ffffff" />
-
-	<link rel="preload" href="https://online pharmacy.com/_includes/webfonts/fa-brands-400.woff2" type="font/woff2" as="font"  crossorigin />
-	<link rel="preload" href="https://online pharmacy.com/_includes/webfonts/fa-regular-400.woff2" type="font/woff2" as="font"  crossorigin/>
-	<link rel="preload" href="https://online pharmacy.com/_includes/webfonts/fa-light-300.woff2" type="font/woff2" as="font"  crossorigin/>
-	<link rel="preload" href="https://onlinepharmacy.com/_includes/webfonts/fa-solid-900.woff2" type="font/woff2" as="font"  crossorigin/>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://online pharmacy.com/_shared/common/js/jquery.noconflict.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index2.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nivo-lightbox/1.3.1/nivo-lightbox.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap" rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <link rel="stylesheet" href="https://online pharmacy.com/_includes/css/LESystem.css?vs=" />
-    <link rel="stylesheet" href="https://online pharmacy.com/_includes/css/LECart.css?vs=" />
-    <link rel="stylesheet" href="https://online pharmacy.com/_includes/css/all.css?vs=" />
-	
-
-
-    <link rel="stylesheet" href="https://online pharmacy.com/_includes/css/LEAdv.css?vs=2" />
-
-    
+ 
 	<script type="text/javascript">
 		var globalMapArray = new Array();
 		var global_arraySnippets = new Array();

@@ -4,7 +4,7 @@
 }
 #panel-image{
   height: 45px;
-  width: 45px;
+  width: 100px;
 }
 
 body{
@@ -58,7 +58,7 @@ body{
 }
 
 img.avatar {
-  width: 40%;
+  width: 100%;
   border-radius: 50%;
 }
 

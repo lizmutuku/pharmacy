@@ -2,7 +2,7 @@
 require_once 'navbar.php';
  ?>
 <div class="navbar">
- <a href="home.php">HOME</a>
+ <a href="index.php">HOME</a>
   <a href="AboutUs.php">ABOUT US</a>
   <a href="products.php">PRODUCTS</a>
   <a href="prescription.php">PRESCRIPTION</a>
@@ -51,53 +51,50 @@ function myFunction() {
 
 <body>
 
-	<h1 style="text-align: center;padding-top: 20px;">RESPIRATORY</h1>
+  <h1 style="text-align: center;padding-top: 20px;">RESPIRATORY</h1>
 
-	<div class="row" style="padding-top: 0px;">
-  		
+  <div class="row" style="padding-top: 0px;">
+      
      <div class="column">
-         <img src="images\respiratory\coldcap capsules.JPG"style="width:400px;height:300px">
-         <p >NAME:COLDCAP CAPSULES</p>
+         <img src="images/Respiratory/benylin 4 flu.JPG"style="width:200px;height:200px">
+         <p >NAME:BENYLIN SYRUP</p>
         <p >PRICE:300</p> 
         <input type="submit" class="btn btn-primary" value="Add to cart">
       </div>
-  		<div class="column">
-
-  			 <img src="images\respiratory\flugone caps.JPG"style="width:400px;height:300px">
-  			 <p >NAME:FLUGONE CAPSULES</p>
-    		<p >PRICE:500</p>	
-    		<input type="submit" class="btn btn-primary" value="Add to cart">
-  		</div>
-  		<div class="column">
-   			<img src="images/antibiotics/Amoxil 500mg.jpeg"style="width:400px;height:300px">
-   			<p >NAME:AMOXIL 500MG (100s)CAPSULES</p>
-    		<p >PRICE:1,500</p>	
-    		<input type="submit" class="btn btn-primary" value="Add to cart">
-  		</div>
-  	</div>
-  	<div class="row" style="padding-top: 0px;">
-  		<div class="column">
-   			<img src="images\antibiotics\ampliclox 500mg.jpg"style="width:400px;height:300px">
-   			<p >NAME:AMPICLOX 500MG CAPSULES</p>
-    		<p >PRICE:2,000</p>
-    		<input type="submit" class="btn btn-primary" value="Add to cart">	
-  		</div>
-  		<div class="column">
-  			 <img src="images\antibiotics\augmentin 500mg.png"style="width:400px;height:300px">
-  			 <p >NAME:AUGMENTIN 500MG CAPSULES</p>
-    		<p >PRICE:2,000</p>	
-    		<input type="submit" class="btn btn-primary" value="Add to cart">
-  		</div>
       <div class="column">
-        <img src="images\antibiotics\zinnat 500mg.jpeg"style="width:400px;height:300px">
-        <p >NAME:ZINNAT 500MG(10s)CAPSULES</p>
+         <img src="images/Respiratory/coldcap syrup.JPG"style="width:200px;height:200px">
+         <p >NAME:COLDCAP SYRUP</p>
+        <p >PRICE:200</p> 
+        <input type="submit" class="btn btn-primary" value="Add to cart">
+      </div>
+      <div class="column">
+        <img src="images/Respiratory/COLDCAP_1.jpg"style="width:200px;height:200px">
+        <p >NAME:COLDCAP TABLETS</p>
+        <p >PRICE:150</p> 
+        <input type="submit" class="btn btn-primary" value="Add to cart">
+      </div>
+    </div>
+    <div class="row" style="padding-top: 0px;">
+      <div class="column">
+        
+        <img src="images/Respiratory/flugone dm syrup.JPG"style="width:200px;height:200px">
+        <p >NAME:FLUGONE DM SYRUP</p>
+        <p >PRICE:300</p>
+        <input type="submit" class="btn btn-primary" value="Add to cart"> 
+      </div>
+      <div class="column">
+         <img src="images/Respiratory/flugone.JPG"style="width:200px;height:200px">
+         <p >NAME:FLUGONE CAPSULES</p>
+        <p >PRICE:2,000</p> 
+        <input type="submit" class="btn btn-primary" value="Add to cart">
+      </div>
+      <div class="column">
+        <img src="images/Respiratory/karvol.JPG"style="width:200px;height:200px">
+        <p >NAME:KARVOL CAPSULES</p>
         <p >PRICE:2,500</p>
         <input type="submit" class="btn btn-primary" value="Add to cart"> 
       </div>
-      <div>
 
-      <button href="checkout.php"enabled class="btn btn-sm btn-success">Check out</button>
-</div>
 
 </body>
 </html>
