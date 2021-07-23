@@ -1,7 +1,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
     <div class="container">
-        <a class="navbar-brand" href="#">My  Pharmacy</a>
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -13,23 +13,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PRODUCTS</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PRESCRIPTION</a>
+                    <a class="nav-link" href="#">Services</a>
                 </li>
                 <li class="nav-item">
-                     <a class="nav-link" href="cart.php">CART</a>
-                      
-                              <?php
-                                      //count the products in the Cart
-                                      $cart_item = new cart_items($db);
-                                      $cart_item->userId=1; //default to user iwth ID "1" for now
-                                      $cart_count = $cart_item->count();
-                                  ?>
-                                  Cart <span class="badge" id="comparison-count"><?php echo $cart_count ?></span>
-                            </a>
-                        </li>
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>

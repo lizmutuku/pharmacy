@@ -1,3 +1,4 @@
+
 <?php 
 
 require_once "config.php";
@@ -6,14 +7,10 @@ session_start();
 
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==='true'){
 	// echo "logged in";
-  header("location:user.php");
+  header("location:index.php");
   exit();
 }
-if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==='true'){
-	//echo "logged in";
-  header("location:admin.php");
-  exit();
-}
+
 $username=$password="";
 $username_error=$password_error="";
 
@@ -32,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	}
 	if (empty($username_error) && empty($password_error)) {
 		// check account details in the database
-		$sql="SELECT userid,username,email,password  FROM users WHERE username='$username'";
+		$sql="SELECT userid,username,email,password,telephone,address FROM users WHERE username='$username'";
 
 		$query=mysqli_query($conn,$sql);
 		if($query){
@@ -42,23 +39,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 					$_SESSION['username']=$userdetails['username'];
 					$_SESSION['email']=$userdetails['email'];
 					$_SESSION['loggedin']=true;
-					header("location:admin.php");
-				}else{
-					header("location:user.php");
+					header("location:index.php");
 					exit();
-				}
 				}else{
 					$password_error="Wrong credentials";
 				}
 			}else{
 				$username_error="Username does not exist";
 			}
-		}else{
+		}
+		else{
 			echo "Query failed" . mysqli_error($conn);
 		}
 
 	}
-
+}
 
 
  ?>
@@ -71,20 +66,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  	<meta name="viewport" content="width=device-width,initial-scale=1.0">
  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
  	<link rel="stylesheet" type="text/css" href="css/style.css">
- 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
  </head>
  <body>
  <div class="container">
  	<div class="row">
  		<div class="col-md-6 offset-3 ">
- 			<h3 class="text-center">Pharmacy System</h3>
+ 			<h3 class="text-center">LOGIN</h3>
 
  			<form action="login.php" method="post">
- 				<h3 class="text-center">Login</h3>
+ 				
  				<div class="form-group">
  					<label for='username'>UserName: </label>
- 					
- 					<input type="text" class="form-control" id="username" name="username" required>
+ 					<input type="text" class="form-control" id="username" name="username">
  					<span class="text-danger"><?php echo $username_error; ?></span>
  				</div>
  				 <div class="form-group">
@@ -101,22 +94,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 							        x.type = "password";
 							    }
 							}
-							
 							</script>
-
-
+ 					
  					<span class="text-danger"><?php echo $password_error; ?></span>
  				</div>
- 			
 
  				 <div class="form-group">
  					<input type="submit" class="btn btn-primary" value="Login">
  				</div>
-
- 				<a href="register.php" class="text-center">Register a new member?</a>
- 				
- 				<a href="reset-password.php" class="text-center">Forgot Password?</a>
- 			
+ 				<a href="register.php" class="text-center">Register as new member</a>
  			</form>
 
  		</div>

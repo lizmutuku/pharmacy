@@ -1,12 +1,24 @@
-<?php 
-require_once 'navbar.php';
- ?>
-<div class="navbar">
- <a href="index.php">HOME</a>
-  <a href="AboutUs.php">ABOUT US</a>
-  <a href="products.php">PRODUCTS</a>
-  <a href="prescription.php">PRESCRIPTION</a>
-  
+<link rel="stylesheet" href="css/index2.css"> 
+<div class="topnav">
+  <a class="active" href="index.php">Home</a>
+   <div class="dropdown">
+    <button class="dropbtn">PRODUCTS 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="antibiotics.php">ANTIBIOTICS</a>
+      <a href="painrelief.php">PAIN RELIEF</a>
+      <a href="respiratory.php">RESPIRATORY</a>
+      <a href="ent.php">EAR NOSE THROAT</a>
+      <a href="digestive.php">DIGESTIVE RELIEF</a>
+    </div>
+  </div> 
+   <a href="prescription.php">PRESCRIPTION</a>
+   
+  <div class="topnav-right">
+    
+    <a href="register.php"> LOGIN / REGISTER</a>
+  </div>
 </div>
 <script>
 window.onscroll = function() {myFunction()};

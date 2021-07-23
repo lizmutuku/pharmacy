@@ -58,33 +58,33 @@ function myFunction() {
 }
 
 </style>
-  <title>EAR/EYE NOSE THROAT</title>
+  <title>DIGESTIVE RELIEF</title>
 </head>
 
 <body>
 
-	<h1 style="text-align: center;padding-top: 20px;">EAR/EYE NOSE THROAT</h1>
+	<h1 style="text-align: center;padding-top: 20px;">DIGESTIVE RELIEF</h1>
 
 	<div class="row" style="padding-top: 0px;">
   		
      <div class="column">
-         <img src="images/ENT/Cerumol ear drops.JPG"style="width:200px;height:200px">
-         <p >NAME:CERUMOL EAR DROPS</p>
-        <p >PRICE:300</p> 
+         <img src="images/Digestive relief/ABZ suspension.JPG"style="width:200px;height:200px">
+         <p >NAME:ABZ SUSPENSION</p>
+        <p >PRICE:100</p> 
         <input type="submit" class="btn btn-primary" value="Add to cart">
       </div>
   		<div class="column">
 
-  			 <img src="images/ENT/Nasosal nasal drops.JPG"style="width:200px;height:200px">
-  			 <p >NAME:NASOSAL NASAL DROPS</p>
-    		<p >PRICE:500</p>	
+  			 <img src="images/Digestive relief/ABZ tabs.JPG"style="width:200px;height:200px">
+  			 <p >NAME:ABZ TABLETS</p>
+    		<p >PRICE:100</p>	
     		<input type="submit" class="btn btn-primary" value="Add to cart">
   		</div>
   		<div class="column">
 
-   			<img src="images/ENT/optive plus eye drops.JPG"style="width:200px;height:200px">
-   			<p >NAME:OPTIVE PLUS EYE DROPS</p>
-    		<p >PRICE:500</p>	
+   			<img src="images/Digestive relief/Colix drops.JPG"style="width:200px;height:200px">
+   			<p >NAME:COLIC DROPS</p>
+    		<p >PRICE:200</p>	
     		<input type="submit" class="btn btn-primary" value="Add to cart">
   		</div>
 
@@ -94,24 +94,46 @@ function myFunction() {
 
   		<div class="column">
 
-   			<img src="images/ENT/Otrivin nasal infant drops.JPG"style="width:200px;height:200px">
-   			<p >NAME:OTRIVIN NASAL DROPS</p>
-    		<p >PRICE:1,000</p>
+   			<img src="images/Digestive relief/Flatameal DS suspension.JPG"style="width:200px;height:200px">
+   			<p >NAME:FLATAMEAL DS SUSPENSION</p>
+    		<p >PRICE:500</p>
     		<input type="submit" class="btn btn-primary" value="Add to cart">	
   		</div>
   		<div class="column">
-  			 <img src="images/ENT/Probeta N.JPG"style="width:200px;height:200px">
-  			 <p >NAME:PROBETA N</p>
-    		<p >PRICE:500</p>	
+  			 <img src="images/Digestive relief/Flatameal DS tabs.JPG"style="width:200px;height:200px">
+  			 <p >NAME:FLATAMEAL DS TABLETS</p>
+    		<p >PRICE:300</p>	
     		<input type="submit" class="btn btn-primary" value="Add to cart">
   		</div>
       <div class="column">
-        <img src="images/ENT/Waxsol ear drops.JPG"style="width:200px;height:200px">
-        <p >NAME:WAXSOL EAR DROPS</p>
+        <img src="images/Digestive relief/Relcer gel.JPG"style="width:200px;height:200px">
+        <p >NAME:RELCER GEL</p>
         <p >PRICE:1000</p>
         <input type="submit" class="btn btn-primary" value="Add to cart"> 
       </div>
+    </div>
+  <div class="row" style="padding-top: 0px;">
 
+      <div class="column">
+
+        <img src="images/Digestive relief/Relcer tabs.JPG"style="width:200px;height:200px">
+        <p >NAME:RELCER TABLETS</p>
+        <p >PRICE:800</p>
+        <input type="submit" class="btn btn-primary" value="Add to cart">
+      </div>
+      <div class="column">
+         <img src="images/Digestive relief/Zentel suspension.JPG"style="width:200px;height:200px">
+         <p >NAME:ZENTEL SUSPENSION</p>
+        <p >PRICE:200</p> 
+        <input type="submit" class="btn btn-primary" value="Add to cart">
+      </div>
+      <div class="column">
+        <img src="images/Digestive relief/Zentel tabs.JPG"style="width:200px;height:200px">
+        <p >NAME:ZENTEL TABLETS</p>
+        <p >PRICE:150</p>
+        <input type="submit" class="btn btn-primary" value="Add to cart">
+      </div>
+</div>
 
 </body>
 </html>

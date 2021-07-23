@@ -3,8 +3,8 @@
   background-color: #midnightblue!important;
 }
 #panel-image{
-  height: 45px;
-  width: 100px;
+  height: 100%;
+  width: 100%;
 }
 
 body{
@@ -14,15 +14,15 @@ body{
 
 }
 #register {
-      padding: 20px;
+      padding: 20rem;
       color: white;
       font-size: 120%;
       background-color: white;
       display: inline-block;
       text-decoration: none;
       border: none;
-      margin-top: 30%;
-      width: 30%;
+      margin-top: 100%;
+      width: 100%;
 
     }
     fieldset{
@@ -42,65 +42,38 @@ body{
 /* Create three equal columns that sits next to each other */
 .column {
   flex: 30.00%;
-  padding: 0px;
+  padding: 20px;
   text-align: center;
 }
   form{
-  margin-top: 10%;
+  margin-top: 5%;
   background-color: peachpuff;
   padding: 20px;
   border-radius: 20px;
 }
  .imgcontainer {
   text-align: center;
-  margin: 24px 0 12px 0;
+  margin: 10px 0 10px 0;
   position: relative;
 }
 
 img.avatar {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
   #Submit{
-    padding: 7px;
+    padding: 10px;
       color: white;
       font-size: 130%;
       background-color: orange;
       display: inline-block;
       text-decoration: none;
       border: none;
-      width: 30%;
+      width: 100%;
 
   }
-  li a{
-      text-decoration: none;
-      padding: 14px 16px;
-      color: white;
-     
-
-    }
-    a{
-      text-decoration: none;
-      float: left;
-    }
-
-    ul{
-      list-style-type: none;
-      margin: 0;
-      padding: 20px0px;
-      overflow: hidden;
-     
-      
-
-    }
-    li a.active{
-      background-color: springgreen;
-       color: black;
-    }
-    li{
-      float: left;
-    }
+  
     .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -141,9 +114,9 @@ img.avatar {
   margin: 3px;
 }
 .input-group input {
-  height: 30px;
-  width: 30%;
-  padding: 5px 10px;
+  height: 100px;
+  width: 100%;
+  padding: 5px 5px;
   font-size: 16px;
   border-radius: 5px;
   border: 1px solid gray;
@@ -160,7 +133,7 @@ label {
 }
 .container {
   background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
+  padding: 15px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
 }

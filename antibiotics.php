@@ -16,8 +16,8 @@
    <a href="prescription.php">PRESCRIPTION</a>
    
   <div class="topnav-right">
-    <a href="login.php">LOGIN</a>
-    <a href="register.php">REGISTER</a>
+    
+    <a href="register.php"> LOGIN / REGISTER</a>
   </div>
 </div>
 <script>
@@ -69,15 +69,12 @@ function myFunction() {
   		
      <div class="column">
 
-<div class="card">
   <img src="images/antibiotics/amoxil suspension 125ml.jpg" style="width:200px;height:200px">
   <p> NAME: AMOXIL SUSPENSION</p>
   <p class="price">KSH:300</p>
-  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-  <p><button>Add to Cart</button></p>
-    
+  
+  <input type="submit" class="btn btn-primary" value="Add to cart"> 
       </div>
-    </div>
   		<div class="column">
 
   			 <img src="images/antibiotics/agumentin suspension.jpg"style="width:200px;height:200px">
@@ -90,7 +87,7 @@ function myFunction() {
    			<img src="images/antibiotics/amoxil-500mg.jpg"style="width:200px;height:200px">
    			<p >NAME:AMOXIL 500MG (100s)CAPSULES</p>
     		<p >PRICE:1,500</p>	
-         <button><a href="cart/add_to_cart.php" class="btn btn-primary">Add to Cart</button></a>
+         <input type="submit" class="btn btn-primary" value="Add to cart">
     		
   		</div>
 
@@ -103,20 +100,20 @@ function myFunction() {
    			<img src="images/antibiotics/Amoxil-Capsules-250mg.jpg"style="width:200px;height:200px">
    			<p >NAME:AMOXIL 250MG CAPSULES</p>
     		<p >PRICE:2,000</p>
-    		<input type="submit" class="btn btn-primary" value="Add to cart">	
+    		<button>Add to Cart</button>	
   		</div>
   		<div class="column">
   			 <img src="images/antibiotics/ampliclox 500mg.png"style="width:200px;height:200px">
   			 <p >NAME:AMPICLOX 500MG CAPSULES</p>
     		<p >PRICE:2,000</p>	
-        <a href="cart/add_to_cart.php" class="btn btn-primary">Add to Cart</a>
+        <input type="submit" class="btn btn-primary" value="Add to cart">
     		
   		</div>
       <div class="column">
         <img src="images/antibiotics/augmentin-tablet-500x500.jpg"style="width:200px;height:200px">
         <p >NAME:AGUMENTIN 500MG(10s)CAPSULES</p>
         <p >PRICE:2,500</p>
-        <a href="cart/add_to_cart.php" class="btn btn-primary">Add to Cart</a>
+       <input type="submit" class="btn btn-primary" value="Add to cart">
        
       </div>
 </div>
@@ -127,7 +124,7 @@ function myFunction() {
         <img src="images/antibiotics/acyclovir-800mg-tablet-500x500.jpg"style="width:200px;height:200px">
         <p >NAME:ACYCLOVIR TABLETS</p>
         <p >PRICE:1,000</p>
-       <a href="cart/add_to_cart.php" class="btn btn-primary">Add to Cart</a>
+      <input type="submit" class="btn btn-primary" value="Add to cart">
       </div>
       <div class="column">
          <img src="images/antibiotics/clavulin syrup.jpg"style="width:200px;height:200px">
@@ -139,7 +136,7 @@ function myFunction() {
         <img src="images/antibiotics/clavulin tabs.jpg"style="width:200px;height:200px">
         <p >NAME:CLAVULIN TABLETS</p>
         <p >PRICE:2,500</p>
-        <a href="cart/add_to_cart.php" class="btn btn-primary">Add to Cart</a>
+        <input type="submit" class="btn btn-primary" value="Add to cart">
       </div>
     </div>
         <div class="row" style="padding-top: 0px;">
@@ -149,19 +146,19 @@ function myFunction() {
         <img src="images/antibiotics/Sehat-com-pk-Doxycycline-Cap-100-mg-10-10-s__82811_zoom.jpg"style="width:200px;height:200px">
         <p >NAME:DOXYCYCLINE CAPSULES</p>
         <p >PRICE:2,000</p>
-        <a href="cart/add_to_cart.php" class="btn btn-primary">Add to Cart</a>
+        <input type="submit" class="btn btn-primary" value="Add to cart">
       </div>
       <div class="column">
          <img src="images/antibiotics/zinnat tabs.png"style="width:200px;height:200px">
          <p >NAME:ZINNAT TABLETS</p>
         <p >PRICE:2,000</p> 
-        <a href="cart/add_to_cart.php" class="btn btn-primary">Add to Cart</a>
+        <input type="submit" class="btn btn-primary" value="Add to cart">
       </div>
       <div class="column">
         <img src="images/antibiotics/Zinnat-Susp-125mg.jpg"style="width:200px;height:200px">
         <p >NAME:ZINNAT SUSPENSION</p>
         <p >PRICE:2,500</p>
-        <a href="cart/add_to_cart.php" class="btn btn-primary">Add to Cart</a>
+        <input type="submit" class="btn btn-primary" value="Add to cart">
       </div>
 </div>
 

@@ -104,21 +104,21 @@ if (empty($username_error) && empty($email_error) && empty($password_error) && e
     <input type="text" class="form-control" id="username" name="username" required>
     <span class="text-danger"><?php echo $username_error; ?></span>
   </div>
-  <div class="row">
+  
  
-  	<div class="form-group"></div>
+  	<div class="form-group">
      <label for="email">Email</label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+    <input type="email" class="form-control" id="email" name="email"required>
      <span class="text-danger"><?php echo $email_error; ?></span>
   </div>
   <div class="form-group ">
     <label for="password">Password</label>
-    <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    <input type="password" class="form-control" id="password"  name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
     <span class="text-danger"><?php echo $password_error; ?></span>
   </div>
   <div class="form-group ">
     <label for="confirm_password">Confirm_password</label>
-    <input type="password" class="form-control" id="confirm_password" placeholder="Re-enter password"name="confirm_password">
+    <input type="password" class="form-control" id="confirm_password" name="confirm_password">
       <span class="text-danger"><?php echo $confirm_password_error; ?></span>
   </div>
    <div class="form-group">
@@ -130,12 +130,12 @@ if (empty($username_error) && empty($email_error) && empty($password_error) && e
             </div>
   <div class="form-group ">
     <label for="address">Address</label>
-    <input type="address" class="form-control" id="address" placeholder="Enter address" name="address" required>
+    <input type="address" class="form-control" id="address" name="address" required>
     <span class="text-danger"><?php echo $address_error; ?></span>
   </div>
   <div class="form-group ">
     <label for="telephone">Telephone</label>
-    <input type="telephone" class="form-control" id="telephone" placeholder="Enter telephone" name="telephone" required>
+    <input type="telephone" class="form-control" id="telephone"  name="telephone" required>
     <span class="text-danger"><?php echo $telephone_error; ?></span>
   </div>
    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>

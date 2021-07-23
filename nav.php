@@ -18,18 +18,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">PRESCRIPTION</a>
                 </li>
-                <li class="nav-item">
-                    
-                      <li <?php echo $page_title=="Cart" ? "class='active'" : ""; ?> >
-                            <a href="cart.php">
-                              <?php
-                                      //count the products in the Cart
-                                      $cart_item = new CartItem($db);
-                                      $cart_item->user_id=1; //default to user iwth ID "1" for now
-                                      $cart_count = $cart_item->count();
-                                  ?>
-                                  Cart <span class="badge" id="comparison-count"><?php echo $cart_count ?></span>
-                            </a>
+                
                         </li>
                 </li>
             </ul>

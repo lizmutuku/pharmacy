@@ -1,28 +1,19 @@
-<?php
-/**
- * used to get a connection to the mysql database
- */
-class Database {
+<?php 
+  $server = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname= "pharmacy";
 
-  private $host = "localhost";
-  private $db_name = "pharmacy";
-  private $username = "root";
-  private $password = "";
-  public $conn;
 
-  //get the db connection
-  public function getConnection(){
-    $this->conn = null;
+  $conn=mysqli_connect($server,$username,$password,$dbname);
 
-    try{
-      $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
-    }catch(PDOException $exception){
-      echo "Connection error: " . $exception->getMessage();
-    }
-
-    return $this->conn;
+  if(!$conn){
+    
+    echo "ERROR:" . mysqli_connect_error();
   }
-}
+
+  
 
 
-?>
+
+ ?>

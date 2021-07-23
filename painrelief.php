@@ -16,8 +16,8 @@
    <a href="prescription.php">PRESCRIPTION</a>
    
   <div class="topnav-right">
-    <a href="login.php">LOGIN</a>
-    <a href="register.php">REGISTER</a>
+    
+    <a href="register.php"> LOGIN / REGISTER</a>
   </div>
 </div>
 <script>

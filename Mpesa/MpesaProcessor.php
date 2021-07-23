@@ -1,7 +1,6 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-// package for generating timestamp
 use Carbon\Carbon;
 
 if (isset($_GET['amount'])) {
@@ -23,12 +22,12 @@ function lipaNaMpesaPassword()
 
    function newAccessToken()
    {
-       $consumer_key="qg60xAn0Vy9mFHCTv5feB5kP0N97PTSq";
-       $consumer_secret="p2MK6RpAnNnYZG0a";
+       $consumer_key="t2YhXBxXJR7Nku0y8omkiTkX9s1KZVzQ";
+       $consumer_secret=" rYM1oTtprcXCNXNi";
        $credentials = base64_encode($consumer_key.":".$consumer_secret);
        $url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
 
-// sending request
+
        $curl = curl_init();
        curl_setopt($curl, CURLOPT_URL, $url);
        curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: Basic ".$credentials,"Content-Type:application/json"));
@@ -43,7 +42,7 @@ function lipaNaMpesaPassword()
    }
 
 
-// calling the function
+
    function stkPush($amount)
    {
        //    $user = $request->user;
@@ -68,7 +67,7 @@ function lipaNaMpesaPassword()
             'PartyB' => 174379,
             'PhoneNumber' => "254723084445",
             'CallBackURL' => 'https://mypharmacy.com/confirmationprocessor.php',
-            'AccountReference' => "My pharmacy",
+            'AccountReference' => "My Pharmacy",
             'TransactionDesc' => "lipa Na M-PESA"
         ];
 
