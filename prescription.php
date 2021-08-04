@@ -16,12 +16,6 @@ require_once 'config.php';
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
  
-	<script type="text/javascript">
-		var globalMapArray = new Array();
-		var global_arraySnippets = new Array();
-		var global_arraySequencing = new Array();
-		var global_current_editor = "";
-	</script>
 
 	<style type="text/css">	
 		.divMenuWrapper {height:50px;}
@@ -39,15 +33,7 @@ require_once 'config.php';
 	</script>
 
 
-   <!--  <link rel="apple-touch-icon" href="https://online pharmacy.com/touch-icon-iphone.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="https://online pharmacy.com/touch-icon-ipad.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="https://online pharmacy.com/touch-icon-iphone-retina.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="https://online pharmacy.com/touch-icon-ipad-retina.png" />
-    <link rel="apple-touch-icon" href="https://online pharmacy.com/startup.png" />
-    <link rel="apple-touch-icon" sizes="640x960" href="https://online pharmacy.com/startup-retina.png" />
-    <link rel="apple-touch-icon" sizes="640x1136" href="https://online pharmacy.com/startup-iphone-retina.png" />
-    <link rel="shortcut icon" href="https://online pharmacy.com/favicon.ico" />
- -->
+  
         
             <script type="text/javascript">
                 (function (c, l, a, r, i, t, y) {
@@ -101,7 +87,7 @@ require_once 'config.php';
             <div class="container">
                 <div id="content">
                     <div class="row">
-                        <div class="col-xs-12 hidden">
+                        <div class="col-md-6 hidden">
                             <div id="PageTitle">
                                 
 
@@ -114,11 +100,11 @@ require_once 'config.php';
 
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+                        <div class="col-md-8 col-md-8 col-md-8 col-md-offset-4">
                             <div class="row">
                                 <div class="stepsOuter">
-                                    <div class="Step1 steps col-xs-4 active"><span>1</span><p> Submit Prescription</p></div>
-                                    <div class="Step2 steps col-xs-4"><span>2</span> <p>Approval & Checkout</p></div>
+                                    <div class="Step1 steps col-md-6-4 active"><span>1</span><p> Submit Prescription</p></div>
+                                    <div class="Step2 steps col-sm-4"><span>2</span> <p>Approval & Checkout</p></div>
                                     <div class="Step3 steps col-xs-4"><span>3</span> <p>Payment & Delivery</p></div>
                                 </div>
                             </div>
