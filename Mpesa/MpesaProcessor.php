@@ -22,8 +22,8 @@ function lipaNaMpesaPassword()
 
    function newAccessToken()
    {
-       $consumer_key="t2YhXBxXJR7Nku0y8omkiTkX9s1KZVzQ";
-       $consumer_secret=" rYM1oTtprcXCNXNi";
+       $consumer_key="2sh2YA1fTzQwrZJthIrwLMoiOi3nhhal";
+       $consumer_secret="CKaCnw224K4Lc56w";
        $credentials = base64_encode($consumer_key.":".$consumer_secret);
        $url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
 
@@ -48,9 +48,9 @@ function lipaNaMpesaPassword()
        //    $user = $request->user;
        //    $amount = $request->amount;
        //    $phone =  $request->phone;
-       //    $formatedPhone = substr($phone, 1);//723084445
+       //    $formatedPhone = substr($phone, 1);//726582228
        //    $code = "254";
-       //    $phoneNumber = $code.$formatedPhone;//254723084445
+       //    $phoneNumber = $code.$formatedPhone;//254726582228
 
       
        
@@ -66,8 +66,8 @@ function lipaNaMpesaPassword()
             'PartyA' => "254723084445",
             'PartyB' => 174379,
             'PhoneNumber' => "254723084445",
-            'CallBackURL' => 'https://mypharmacy.com/confirmationprocessor.php',
-            'AccountReference' => "My Pharmacy",
+            'CallBackURL' => 'https://60a8b840129d.ngrok.io/callback',
+            'AccountReference' => "online pharmacy",
             'TransactionDesc' => "lipa Na M-PESA"
         ];
 

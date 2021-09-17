@@ -1,39 +1,8 @@
-<link rel="stylesheet" href="css/index2.css"> 
-<div class="topnav">
-  <a class="active" href="index.php">Home</a>
-   <div class="dropdown">
-    <button class="dropbtn">PRODUCTS 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="antibiotics.php">ANTIBIOTICS</a>
-      <a href="painrelief.php">PAIN RELIEF</a>
-      <a href="respiratory.php">RESPIRATORY</a>
-      <a href="ent.php">EAR NOSE THROAT</a>
-      <a href="digestive.php">DIGESTIVE RELIEF</a>
-    </div>
-  </div> 
-   <a href="prescription.php">PRESCRIPTION</a>
-   
-  <div class="topnav-right">
-    
-    <a href="register.php"> LOGIN / REGISTER</a>
-  </div>
-</div>
-<script>
-window.onscroll = function() {myFunction()};
+<?php
+require_once "config.php";
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
+require_once"layout-head.php";
+?>
 
 <!DOCTYPE html>
 <html>

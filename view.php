@@ -1,11 +1,9 @@
 <?php
 session_start();
-include_once('connect_db.php');
+include_once('config.php');
 if(isset($_SESSION['username'])){
-$id=$_SESSION['manager_id'];
 $fname=$_SESSION['first_name'];
 $lname=$_SESSION['last_name'];
-$sid=$_SESSION['staff_id'];
 $user=$_SESSION['username'];
 }else{
 header("location:http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF'])."/index.php");

@@ -33,7 +33,8 @@ Types of drugs:
 						</ul>
 	</p>
     <p class="lead">
-      <a href="register.php" class="btn btn-lg btn-info">LOGIN /REGISTER</a>
+      <a href="login.php" class="btn btn-lg btn-info">LOGIN /REGISTER</a>
+
     </p>
   </main>
   <footer class="mastfoot mt-auto">

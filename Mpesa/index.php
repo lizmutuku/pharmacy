@@ -29,7 +29,7 @@ route('/callback', function () {
     }
 
     $conn->close();
-});
+} );
 
 route('/about', function () {
     return "This is the about page";

@@ -47,8 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			}else{
 				$username_error="Username does not exist";
 			}
-		}
-		else{
+		}else{
 			echo "Query failed" . mysqli_error($conn);
 		}
 
@@ -71,10 +70,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  <div class="container">
  	<div class="row">
  		<div class="col-md-6 offset-3 ">
- 			<h3 class="text-center">LOGIN</h3>
+ 			<h3 class="text-center">pharmacy login</h3>
 
  			<form action="login.php" method="post">
- 				
+ 				<h3 class="text-center">Login</h3>
  				<div class="form-group">
  					<label for='username'>UserName: </label>
  					<input type="text" class="form-control" id="username" name="username">

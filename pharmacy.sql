@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 04, 2021 at 10:48 AM
+-- Generation Time: Sep 16, 2021 at 01:25 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -32,10 +32,7 @@ CREATE TABLE `cart` (
   `cartId` int(255) NOT NULL,
   `product_name` varchar(255) NOT NULL,
   `product_price` varchar(255) NOT NULL,
-  `product_qty` int(100) NOT NULL,
-  `product_code` varchar(10) NOT NULL,
-  `product_image` varchar(100) NOT NULL,
-  `total_price` int(100) NOT NULL
+  `product_qty` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -46,11 +43,23 @@ CREATE TABLE `cart` (
 
 CREATE TABLE `cart_item` (
   `Id` int(255) NOT NULL,
-  `product_id` int(255) NOT NULL,
-  `quantity` int(255) NOT NULL,
-  `userId` int(100) NOT NULL,
-  `created` datetime(6) NOT NULL,
-  `modified` timestamp(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6)
+  `username` varchar(255) NOT NULL,
+  `productname` varchar(255) NOT NULL,
+  `quantity` int(100) NOT NULL,
+  `price` int(255) NOT NULL,
+  `image` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `category`
+--
+
+CREATE TABLE `category` (
+  `id` int(255) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `cat_slug` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -72,6 +81,26 @@ CREATE TABLE `orders` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `product_id` int(255) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `product_price` double(7,2) NOT NULL,
+  `product_desr` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`product_id`, `product_name`, `product_price`, `product_desr`) VALUES
+(4, 'AMOXIL SUSPENSION', 300.00, 'AMOXIL SUSPENSION');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `product_images`
 --
 
@@ -82,6 +111,20 @@ CREATE TABLE `product_images` (
   `created` datetime(6) NOT NULL,
   `modified` timestamp(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6),
   `timestamp` timestamp(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `upload_prescription`
+--
+
+CREATE TABLE `upload_prescription` (
+  `id` int(255) NOT NULL,
+  `image_dir` varchar(100) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `date` datetime(6) NOT NULL DEFAULT current_timestamp(6),
+  `order_details` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -105,8 +148,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userId`, `username`, `email`, `password`, `gender`, `address`, `telephone`) VALUES
-(1, 'liz mutuku', 'lizmutuku91@gmail.com', '$2y$10$SiAZQDNQ.ZBoKozmUkw6G.U4QNNXXqF8eMPI6lNOq/RwBX8NgC7VS', 'female', '00100', 775349262),
-(2, 'Tabby karuga', 'tabbykaruga@gmail.com', '$2y$10$QsdrS2qgsMRX1OepBQaSX.gY0fldO1Rn4.AEHNtPo1mdRssqdUO3i', 'female', '00501', 703271678);
+(1, 'Liz Mutuku', 'lizmutuku91@gmail.com', '$2y$10$6H8K48Rg9rc1EsD86yTb2.TMmxqKx39Xs13DY4qs2FCfu4JBPjUvC', 'female', '00100', 723084445),
+(2, 'Admin', 'lizmutuku91@gmail.com', '$2y$10$1FTrD5lZB.OwDmyAom2hyOV21zDyiMf8z1xrOmvIbUvF/nMf9U1ka', 'female', '00501', 123456789);
 
 --
 -- Indexes for dumped tables
@@ -125,15 +168,33 @@ ALTER TABLE `cart_item`
   ADD PRIMARY KEY (`Id`);
 
 --
+-- Indexes for table `category`
+--
+ALTER TABLE `category`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`productId`);
 
 --
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`product_id`);
+
+--
 -- Indexes for table `product_images`
 --
 ALTER TABLE `product_images`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `upload_prescription`
+--
+ALTER TABLE `upload_prescription`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -145,6 +206,18 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `category`
+--
+ALTER TABLE `category`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `upload_prescription`
+--
+ALTER TABLE `upload_prescription`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`

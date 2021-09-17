@@ -1,8 +1,15 @@
+<?php
+require_once "config.php";
+
+session_start();
+?>
  <link rel="stylesheet" href="css/index2.css">	
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
+   
    <div class="dropdown">
-    <button class="dropbtn">PRODUCTS 
+    <button class="dropbtn">
+      PRODUCTS 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -13,11 +20,21 @@
       <a href="digestive.php">DIGESTIVE RELIEF</a>
     </div>
   </div> 
-   <a href="prescription.php">PRESCRIPTION</a>
+
    
   <div class="topnav-right">
     
-    <a href="register.php"> LOGIN /REGISTER</a>
+    <a class="active" href="cart.php">Cart</a>
+                        <!-- <?php
+                        // count products in cart
+                        // $cart_count=count($_SESSION['cart']);
+                         ?> -->
+                        <!-- Cart <span class="badge" id="comparison-count"><?php echo $cart_count; ?></span> -->
+                    <!-- </a> -->
+                <!-- </li> -->
+                
+    <a href="logout.php">LOGOUT</a>
+   </div>
   </div>
 </div>
 
@@ -47,10 +64,12 @@ function myFunction() {
 <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css”>
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 
   <body class="text-center">
+   
 <div class="container">
    
     <h1 style="text-align:center">ONLINE PHARMACY</h1>
