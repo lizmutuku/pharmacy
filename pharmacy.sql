@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 16, 2021 at 01:25 PM
+-- Generation Time: Sep 19, 2021 at 09:22 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -32,7 +32,8 @@ CREATE TABLE `cart` (
   `cartId` int(255) NOT NULL,
   `product_name` varchar(255) NOT NULL,
   `product_price` varchar(255) NOT NULL,
-  `product_qty` int(100) NOT NULL
+  `product_qty` int(100) NOT NULL,
+  `total_price` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -69,34 +70,27 @@ CREATE TABLE `category` (
 --
 
 CREATE TABLE `orders` (
-  `productId` int(255) NOT NULL,
-  `product_name` varchar(255) NOT NULL,
-  `price` int(255) NOT NULL,
-  `description` varchar(100) NOT NULL,
-  `category_id` int(100) NOT NULL,
-  `category_name` varchar(100) NOT NULL,
-  `timestamp` timestamp(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6)
+  `order-id` int(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(15) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `payment_mode` varchar(100) NOT NULL,
+  `products` varchar(100) NOT NULL,
+  `paid_amount` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products`
+-- Table structure for table `product`
 --
 
-CREATE TABLE `products` (
+CREATE TABLE `product` (
   `product_id` int(255) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `product_price` double(7,2) NOT NULL,
-  `product_desr` varchar(300) NOT NULL
+  `product_name` varchar(255) NOT NULL,
+  `product_price` decimal(9,2) NOT NULL,
+  `product_descr` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `products`
---
-
-INSERT INTO `products` (`product_id`, `product_name`, `product_price`, `product_desr`) VALUES
-(4, 'AMOXIL SUSPENSION', 300.00, 'AMOXIL SUSPENSION');
 
 -- --------------------------------------------------------
 
@@ -108,9 +102,7 @@ CREATE TABLE `product_images` (
   `id` int(255) NOT NULL,
   `productId` int(255) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `created` datetime(6) NOT NULL,
-  `modified` timestamp(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6),
-  `timestamp` timestamp(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6)
+  `modified` timestamp(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -177,12 +169,12 @@ ALTER TABLE `category`
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`productId`);
+  ADD PRIMARY KEY (`order-id`);
 
 --
--- Indexes for table `products`
+-- Indexes for table `product`
 --
-ALTER TABLE `products`
+ALTER TABLE `product`
   ADD PRIMARY KEY (`product_id`);
 
 --
@@ -212,6 +204,12 @@ ALTER TABLE `users`
 --
 ALTER TABLE `category`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `product_id` int(255) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `upload_prescription`
