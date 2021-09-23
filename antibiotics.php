@@ -38,7 +38,7 @@ require_once"layout-head.php";
 <body>
 
 	<h1 style="text-align: center;padding-top: 10px;">ANTIBIOTICS</h1>
-<form action="addtocart.php" method="get" name="addcartform" id="addcartform" onsubmit="return false;">
+<form id="form1" name="form1" method="post" action="cart.php">
 	<div class="row" style="padding-top: 0px;">
   		
     <div class="column">
@@ -140,12 +140,16 @@ require_once"layout-head.php";
       <p><button>Add to Cart</button></p>
       
     </div>
+
     <div class="column">
       <img src="images/antibiotics/Zinnat-Susp-125mg.jpg"style="width:200px;height:200px">
       <p >NAME:ZINNAT SUSPENSION</p>
       <p >PRICE:2,500</p>
       <p><button>Add to Cart</button></p>
-     
+      
+        <input type="hidden" name="pid" id="pid" value="<?php echo $id; ?>" />
+        <input type="submit" name="button" id="button" value="Add to Shopping Cart" />
+      </form>
     </div>
   </div>
   

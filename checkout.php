@@ -1,7 +1,7 @@
 <?php 
    
 
-    require_once('./inc/config.php');    
+    require_once 'config.php';    
     // require_once('./inc/helpers.php');  
     $cartItemCount = count($_SESSION['cart_items']);
 
@@ -175,7 +175,7 @@
     $pageTitle = 'Demo PHP Shopping cart checkout page with Validation';
     $metaDesc = 'Demo PHP Shopping cart checkout page with Validation';
     
-    include('layouts/header.php');
+    include' header.php';
 ?>
 <div class="row mt-3">
         <div class="col-md-4 order-md-2 mb-4">

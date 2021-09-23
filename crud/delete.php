@@ -42,6 +42,8 @@ if (isset($_POST['id'])&& !empty($_POST['id'])) {
      <meta charset="UTF-8">
      <title>delete record</title>
      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+
  </head>
  <body>
    <div class="wrapper">
